@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { GeofenceComponent } from './geofence/geofence.component';
+import { SignupinComponent } from './signupin/signupin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    GeofenceComponent
+    GeofenceComponent,
+    SignupinComponent
   ],
   imports: [
     BrowserModule
