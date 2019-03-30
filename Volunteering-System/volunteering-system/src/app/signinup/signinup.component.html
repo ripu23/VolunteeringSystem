@@ -1,41 +1,36 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-4 col-sm-4 col-xs-12">
 
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-12">
-      <form class="form-container bg-container-signin">
+  <div class="row">
+    <div class="col align-self-center">
+      <form class="form-container bg-container-signin" #registrationForm="ngForm" (ngSubmit)="register(registrationForm)">
+        {{ registrationForm.value | json}}
         <h2>Login</h2>
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" class="form-control" id="inputName" aria-describedby="inputName"
-            placeholder="Enter your name..">
+            placeholder="Enter your name.." name="userName" ngModel>
         </div>
         <div class="form-group">
           <label for="emailAddress">Email address</label>
           <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-            placeholder="Enter email">
+            placeholder="Enter email" name="email" ngModel>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" ngModel>
         </div>
         <div class="form-group">
           <label for="address">Address</label>
           <input type="text" class="form-control" id="inputAddress" aria-describedby="inputAddress"
-            placeholder="Enter Address..">
+            placeholder="Enter Address.." name="address" ngModel>
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Phone number</label>
           <input type="text" class="form-control" id="inputNumber" aria-describedby="inputNumber"
-            placeholder="Enter your phone number">
+            placeholder="Enter your phone number" name="phone" ngModel>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-success">Submit</button>
       </form>
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-12">
-
-    </div>
+    </div>  
   </div>
-</div>
+
