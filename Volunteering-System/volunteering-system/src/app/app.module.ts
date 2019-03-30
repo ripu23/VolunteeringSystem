@@ -9,13 +9,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { SigininComponent } from './siginin/siginin.component';
+import { InfoComponent } from './info/info.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     GeofenceComponent,
     SigninupComponent,
-    HomeComponent
+    HomeComponent,
+    SigininComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

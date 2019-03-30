@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -10,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  login() {
+    this.router.navigate(['login']);
+  }
+
+  signup() {
+    this.router.navigate(['register']);
+  }
 }
