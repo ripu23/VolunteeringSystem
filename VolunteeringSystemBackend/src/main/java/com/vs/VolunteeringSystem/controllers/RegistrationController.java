@@ -16,6 +16,7 @@ import com.vs.VolunteeringSystem.Models.User;
 import com.vs.VolunteeringSystem.Repo.UserRepository;
 
 @RestController
+@RequestMapping("/api")
 public class RegistrationController {
 
 	@Autowired

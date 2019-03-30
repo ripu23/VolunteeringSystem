@@ -19,6 +19,7 @@ export class SigninupComponent implements OnInit {
     // console.log(user.value);
     this.userService.registerUser(<User>user.value).subscribe(response => {
       console.log(response);
-    });
+    },
+    (error: any) => console.log(error));
   }
 }
