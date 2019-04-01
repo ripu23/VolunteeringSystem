@@ -4,4 +4,6 @@ export class User {
     phone: string;
     password: string;
     email: string;
+    lat: string;
+    lng: string;
 }

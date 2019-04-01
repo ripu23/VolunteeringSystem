@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { SigininComponent } from './siginin/siginin.component';
 import { InfoComponent } from './info/info.component';
+import { RequestComponent } from './request/request.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { InfoComponent } from './info/info.component';
     SigninupComponent,
     HomeComponent,
     SigininComponent,
-    InfoComponent
+    InfoComponent,
+    RequestComponent
   ],
   imports: [
     BrowserModule,

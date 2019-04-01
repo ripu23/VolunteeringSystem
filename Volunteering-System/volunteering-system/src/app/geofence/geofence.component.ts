@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 declare var H: any;
 
@@ -34,7 +35,7 @@ export class GeofenceComponent implements OnInit {
 
   public map;
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
     if (navigator.geolocation) {
@@ -65,6 +66,7 @@ export class GeofenceComponent implements OnInit {
     let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(this.map));
     let currentMarker = new H.map.Marker({lat: this.lat, lng: this.lng});
     this.map.addObject(currentMarker);
+    this.data.changeMap(this.map);
   }
 
 }
